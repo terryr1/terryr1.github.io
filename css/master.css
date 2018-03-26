@@ -63,7 +63,7 @@ section
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100vh;
+	height: 90vh;
 	padding: 0 0 0 0;
 	box-sizing: border-box;
 }
@@ -115,10 +115,19 @@ section.sec2
 
 section.sec3
 {
+	margin-top: -150px;
 	font-family: 'Lato', serif;
 	padding: 100px;
 	height: auto;
 	background-color: white;
+}
+
+section.sec3a
+{
+	background: url(animator1.png);
+	background-size: 500px 500px;
+	background-position: center top;
+	background-repeat: no-repeat;
 }
 
 section.sec4
@@ -129,16 +138,35 @@ section.sec4
 	background-color: white;
 }
 
+section.sec4a
+{
+	background: url(story1.png);
+	background-size: 500px 300px;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
 section.sec5
 {
 	font-family: 'Lato', serif;
 	padding: 100px;
+	margin-top: -200px;
 	height: auto;
 	background-color: white;
 }
 
+section.sec5a
+{
+	background: url(ta1.png);
+	background-size: 500px 280px;
+	background-position: center top;
+	background-repeat: no-repeat;
+
+}
+
 section.footer
 {
+	margin-top: -150px;
 	font-family: 'Lato', serif;
 	color: white;
 	text-align: center;
