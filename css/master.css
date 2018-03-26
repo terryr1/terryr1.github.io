@@ -3,6 +3,27 @@ body {
 	padding: 0;
 }
 
+img {
+	float: left;
+	padding-right: 100px;
+}
+
+.img1 {
+	padding-right: 100px;
+	width: 400px;
+	height: 400px;
+}
+
+.img2 {
+	width: 400px;
+	height: 220px;
+}
+
+.img3 {
+	width: 400px;
+	height: 230px;
+}
+
 .navbar
 {
 	z-index: 2;
@@ -127,16 +148,7 @@ section.sec3
 	padding: 100px;
 	height: auto;
 	background-color:black;
-}
-
-section.sec3a
-{
-	height: 90vh;
-	background-image: url(animator1.jpg);
-	background-size: 500px 500px;
-	background-position: center top;
-	background-repeat: no-repeat;
-	background-color: black;
+	overflow: auto;
 }
 
 section.sec4
@@ -146,16 +158,9 @@ section.sec4
 	padding: 100px;
 	height: auto;
 	background-color: white;
+	overflow: auto;
 }
 
-section.sec4a
-{
-	height: 70vh;
-	background-image: url(story1.jpg);
-	background-size: 500px 300px;
-	background-position: center top;
-	background-repeat: no-repeat;
-}
 
 section.sec5
 {
@@ -168,20 +173,7 @@ section.sec5
 	padding-bottom: 50px;
 	height: auto;
 	background-color: black;
-}
-
-section.sec5a
-{
-	height: 70vh;
-	background-image: url(ta1.jpg);
-	background-size: 500px 280px;
-	background-position: center top;
-	background-repeat: no-repeat;
-	background-color: black;
-	margin: 0;
-	padding: 0;
-	bottom: 0;
-	top: 0;
+	overflow: auto;
 }
 
 section.footer
