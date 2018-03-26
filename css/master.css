@@ -124,7 +124,7 @@ section.sec3
 
 section.sec3a
 {
-	background: url(animator1.jpg);
+	background-image: url(animator1.jpg);
 	background-size: 500px 500px;
 	background-position: center top;
 	background-repeat: no-repeat;
@@ -140,7 +140,7 @@ section.sec4
 
 section.sec4a
 {
-	background: url(story1.jpg);
+	background-image: url(story1.jpg);
 	background-size: 500px 300px;
 	background-position: center top;
 	background-repeat: no-repeat;
@@ -157,7 +157,7 @@ section.sec5
 
 section.sec5a
 {
-	background: url(ta1.jpg);
+	background-image: url(ta1.jpg);
 	background-size: 500px 280px;
 	background-position: center top;
 	background-repeat: no-repeat;
