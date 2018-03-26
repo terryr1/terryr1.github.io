@@ -93,7 +93,7 @@ section.sec1 h1 {
 	height: 100px;
 	position: relative; /* or absolute */
     top: 50%;
-    margin-top: -170px;
+    margin-top: -80px;
     background-attachment: fixed;
 }
 
@@ -106,7 +106,7 @@ section.sec1 h2 {
 	height: 100px;
 	position: relative; /* or absolute */
     top: 50%;
-    margin-top: -50px;
+    margin-top: -40px;
     background-attachment: fixed;
 }
 
