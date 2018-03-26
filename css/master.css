@@ -1,3 +1,8 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
 .navbar
 {
 	z-index: 2;
@@ -63,17 +68,17 @@ section
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 90vh;
 	padding: 0 0 0 0;
 	box-sizing: border-box;
 }
 
 section.sec1
 {
+	height: 90vh;
 	background-color: white;
 	background-image: url(building3.jpg);
 	background-size: cover;
-	margin-top: 50px;
+	padding: 100px;
 	background-position: center top;
 	background-repeat: no-repeat;
 
@@ -81,7 +86,7 @@ section.sec1
 
 section.sec1 h1 {
 	font-family: 'Lato', serif;
-    font-size: 110px;
+    font-size: 100px;
     text-align: center;
     color: white;
     width: 100%;
@@ -107,6 +112,7 @@ section.sec1 h2 {
 
 section.sec2
 {
+	height: 90vh;
 	font-family: 'Lato', serif;
 	padding: 100px;
 	height: auto;
@@ -115,23 +121,27 @@ section.sec2
 
 section.sec3
 {
-	margin-top: -150px;
+	height: 90vh;
+	color: white;
 	font-family: 'Lato', serif;
 	padding: 100px;
 	height: auto;
-	background-color: white;
+	background-color:black;
 }
 
 section.sec3a
 {
+	height: 90vh;
 	background-image: url(animator1.jpg);
 	background-size: 500px 500px;
 	background-position: center top;
 	background-repeat: no-repeat;
+	background-color: black;
 }
 
 section.sec4
 {
+	height: 90vh;
 	font-family: 'Lato', serif;
 	padding: 100px;
 	height: auto;
@@ -140,6 +150,7 @@ section.sec4
 
 section.sec4a
 {
+	height: 70vh;
 	background-image: url(story1.jpg);
 	background-size: 500px 300px;
 	background-position: center top;
@@ -148,25 +159,34 @@ section.sec4a
 
 section.sec5
 {
+	height: 90vh;
 	font-family: 'Lato', serif;
-	padding: 100px;
-	margin-top: -200px;
+	color: white;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	height: auto;
-	background-color: white;
+	background-color: black;
 }
 
 section.sec5a
 {
+	height: 70vh;
 	background-image: url(ta1.jpg);
 	background-size: 500px 280px;
 	background-position: center top;
 	background-repeat: no-repeat;
-
+	background-color: black;
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+	top: 0;
 }
 
 section.footer
 {
-	margin-top: -150px;
+	height: 90vh;
 	font-family: 'Lato', serif;
 	color: white;
 	text-align: center;
@@ -200,9 +220,11 @@ section.footer ul li a
 	font-weight: bold;
 }
 
-
-body {
-	margin: 0;
-	padding: 0;
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #fff;
+    margin: 1em 0;
+    padding: 0;
 }
-
