@@ -6,10 +6,10 @@ body {
 img {
 	float: left;
 	padding-right: 100px;
+	padding-bottom: 50px;
 }
 
 .img1 {
-	padding-right: 100px;
 	width: 400px;
 	height: 400px;
 }
