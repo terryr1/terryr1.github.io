@@ -104,6 +104,12 @@ body {
 		background-color: black;
 	}
 
+	.player {
+		padding-bottom: -10%;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
 	/** -----------------------------------------------FOOTER **/
 	/*centers items vertically*/
 	.footer {
