@@ -1,11 +1,11 @@
 body {
-    background-color: lightblue;
+    background-color: black;
 }
 
 
 /*----------------DESKTOP SITE-----------------------*/
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 777px) {
 
     body {
 		margin: 0;
