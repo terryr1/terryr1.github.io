@@ -138,9 +138,8 @@ body {
 
 	/*header line*/
 	.hline {
-		width: 95%;
+		width: 100%;
 		top: 70px;/*make vh*/
-		left: 2.5%;/*make vh*/
 		color: black;
 		border-top: 2px solid black;/*make vh*/
 		position: absolute;

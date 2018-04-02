@@ -45,8 +45,9 @@ body {
 	.img1 {
 		float: right;
 		width: 25%;
-		height: 15em;
-		left: 15%;		
+		height: 21em;
+		left: 13%;		
+		padding-top: 3%;
 		position: relative;
 	}
 
@@ -75,6 +76,7 @@ body {
 	.img2 {
 		width: 130%;
 		overflow: hidden;
+
 		height: auto;
 		padding-top: 10%;
 		padding-bottom: 10%;
@@ -144,9 +146,8 @@ body {
 
 	/*header line*/
 	.hline {
-		width: 95%;
+		width: 100%;
 		top: 70px;/*make vh*/
-		left: 2.5%;/*make vh*/
 		color: black;
 		border-top: 2px solid black;/*make vh*/
 		position: absolute;
