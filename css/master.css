@@ -69,6 +69,7 @@ body {
 		padding-top: 0%;
 		position: absolute;
 		background-color: black;
+		z-index: 5;
 	}
 
 	.img2 {
