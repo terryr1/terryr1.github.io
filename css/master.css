@@ -1,222 +1,232 @@
 body {
-	margin: 0;
-	padding: 0;
-}
-
-img {
-	float: left;
-	padding-right: 100px;
-	padding-bottom: 50px;
-}
-
-.img1 {
-	width: 400px;
-	height: 400px;
-}
-
-.img2 {
-	width: 400px;
-	height: 220px;
-}
-
-.img3 {
-	width: 400px;
-	height: 230px;
-}
-
-.navbar
-{
-	z-index: 2;
-	font-family: 'Lato', serif;
-    font-size: 13px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 80px;
-	padding: 0 0 0 0;
-	box-sizing: border-box;
-	transition: .5s;
-}
-
-.navbar.hide 
-{
-	transform: translateY(-100%);
-}
-
-.navbar .channel {
-	position: relative;
-}
-
-.navbar ul
-{
-	margin: 0;
-	padding-left: 50%;
-	margin-left: -270px;
-	position: relative;
-	display: flex;
-	float: center;
-	background: white;
-}
-
-.navbar ul li
-{
-	list-style: none;
-
-	line-height: 60px;
-	text-align: center;
-}
-
-.navbar ul li a
-{
-	display: block;
-	padding: 0 30px;
-	text-decoration: none;
-	text-transform: uppercase;
-	color: black;
-	font-weight: bold;
-}
-
-.navbar ul li a:hover
-{
-	background: black;
-	color: white;
-
-}
-
-section
-{
-	top: 0;
-	left: 0;
-	width: 100%;
-	padding: 0 0 0 0;
-	box-sizing: border-box;
-}
-
-section.sec1
-{
-	height: 90vh;
-	background-color: white;
-	background-image: url(building3.jpg);
-	background-size: cover;
-	padding: 100px;
-	background-position: center top;
-	background-repeat: no-repeat;
-
-}
-
-section.sec1 h1 {
-	font-family: 'Lato', serif;
-    font-size: 100px;
-    text-align: center;
-    color: white;
-    width: 100%;
-	height: 100px;
-	position: relative; /* or absolute */
-    top: 50%;
-    margin-top: -80px;
-    background-attachment: fixed;
-}
-
-section.sec1 h2 {
-	font-family: 'Lato', serif;
-    font-size: 40px;
-    text-align: center;
-    color: white;
-    width: 100%;
-	height: 100px;
-	position: relative; /* or absolute */
-    top: 50%;
-    margin-top: -40px;
-    background-attachment: fixed;
-}
-
-section.sec2
-{
-	height: 90vh;
-	font-family: 'Lato', serif;
-	padding: 100px;
-	height: auto;
-	background-color: white;
-}
-
-section.sec3
-{
-	height: 90vh;
-	color: white;
-	font-family: 'Lato', serif;
-	padding: 100px;
-	height: auto;
-	background-color:black;
-	overflow: auto;
-}
-
-section.sec4
-{
-	height: 90vh;
-	font-family: 'Lato', serif;
-	padding: 100px;
-	height: auto;
-	background-color: white;
-	overflow: auto;
+    background-color: lightblue;
 }
 
 
-section.sec5
-{
-	height: 90vh;
-	font-family: 'Lato', serif;
-	color: white;
-	padding-left: 100px;
-	padding-right: 100px;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	height: auto;
-	background-color: black;
-	overflow: auto;
+/*----------------DESKTOP SITE-----------------------*/
+
+@media only screen and (min-width: 650px) {
+
+    body {
+		margin: 0;
+		padding: 0;
+		background-color: white;
+	}
+
+	* {
+	    box-sizing: border-box;
+	    /*border: 1px solid red;*/
+	}
+
+	/*----------------------------------ABOUT ME PAGE----*/
+
+	/*centers items vertically*/
+	.me {
+		display: flex;
+		align-items: center;
+	}
+
+	/*anoutme text*/
+	.sec1 {
+		font-family: 'Lato', serif;
+		color: #A9AEA2;
+		float: left;
+		padding-top: 10%;
+		width: 50%;
+		padding: 8%;
+		padding-top: 5%;
+		left: 5%;
+		position: relative;
+		background-color: black;
+		z-index: 2;
+	}
+
+	/* face */
+	.img1 {
+		float: right;
+		width: 25%;
+		height: 15em;
+		left: 15%;		
+		position: relative;
+	}
+
+	/** ----------------------------------------------ABOUT ME PART 2 **/
+	/*centers items vertically*/
+	.art {
+		display: flex;
+		align-items: center;
+	}
+
+	/*aboutme text*/
+	.sec2 {
+		font-family: 'Lato', serif;
+		color: #A9AEA2;
+		float: right;
+		width: 50%;
+		padding: 0%;
+		padding-left: 3%;
+		padding-right: 3%;
+		padding-top: 0%;
+		position: absolute;
+		background-color: black;
+		z-index: 2;
+	}
+
+	.img2 {
+		width: 130%;
+		overflow: hidden;
+		height: auto;
+		padding-top: 10%;
+		padding-bottom: 10%;
+		
+		position: relative;
+	}
+
+	/*.sec2 p {
+		z-index: 5;
+	}
+
+	/** -----------------------------------------------ABOUT ME PART 3 **/
+	/*centers items vertically*/
+	.music {
+		display: flex;
+		align-items: center;
+	}
+
+	/*aboutme text*/
+	.sec3 {
+		font-family: 'Lato', serif;
+		color: #A9AEA2;
+		float: left;
+		
+		width: 50%;
+		padding: 8%;
+		padding-top: 5%;
+		position: relative;
+		background-color: black;
+		z-index: 2;
+	}
+
+	/*.sec2 p {
+		z-index: 5;
+	}
+
+	/* drawings */
+	/*.img2 {
+		float: right;
+		width: 25%;
+		height: 17em;
+		left: 15%;		
+		position: relative;
+	}*/
+
+	/** -----------------------------------------------FOOTER **/
+	/*centers items vertically*/
+	.footer {
+		display: flex;
+		align-items: center;
+		background-color: black;
+		width: 100%;
+		padding-top: 10%;
+	}
+
+	.footersec {
+		width: 100%;
+		font-family: 'Lato', serif;
+		color: #555654;
+		float: right;
+		padding-left: 5%;
+		background-color: black;
+	}
+
+
+	/*----------------------------------------------------HEADER----*/
+
+	/*header line*/
+	.hline {
+		width: 95%;
+		top: 70px;/*make vh*/
+		left: 2.5%;/*make vh*/
+		color: black;
+		border-top: 2px solid black;/*make vh*/
+		position: absolute;
+	}
+
+	.header {
+		font-family: 'Lato', serif;
+	    font-size: 13px;/*make vh*/
+	}
+
+	/*left list*/
+	.ul2
+	{
+		position: relative;
+		display: flex;
+		float: left;
+		padding: 0 4vh;
+	}
+
+	/*right list*/
+	.ul1
+	{
+		position: relative;
+		display: flex;
+		float: right;
+		padding: 0 4vh;
+	}
+
+	/*my name*/
+	.header h1 {
+		margin: 0;
+		position: relative;
+		display: flex;
+		float: left;
+		display: block;
+		padding: 0 2vh;/*make vh*/
+		list-style: none;
+		line-height: 90px;/*make px*/
+		text-align: center;
+		text-decoration: none;
+		color: black;
+		font-weight: bold;
+		margin-left: 6vh;/*make vh*/
+	}
+
+	.header ul li
+	{
+		list-style: none;
+		line-height: 75px;/*make px*/
+		text-align: center;
+	}
+
+	.header ul li a
+	{
+		display: block;
+		padding: 0 2vh;/*make vh*/
+		text-decoration: none;
+		color: black;
+		font-weight: bold;
+	}
+
+	.header ul li span
+	{
+		display: block;
+		padding: 0 2vh;/*make vh*/
+		text-decoration: none;
+		color: white;
+		background-color: black;
+		font-weight: bold;
+	}
+
+	.header ul li a:hover
+	{
+		font-family: 'Lato', serif;
+	    font-size: 12px;/*make vh*/
+	    color: rgba(0, 0, 0, 0.8);
+	}
+
+
 }
 
-section.footer
-{
-	height: 90vh;
-	font-family: 'Lato', serif;
-	color: white;
-	text-align: center;
-	padding: 100px;
-	height: auto;
-	background-color: black;
-}
 
-section.footer ul {
-	margin: 0;
-	position: relative;
-	display: flex;
-	float: center;
-	padding-left: 50%;
-	margin-left: -190px;
-}
 
-section.footer ul li
-{
-	list-style: none;
-	text-align: center;
-}
-
-section.footer ul li a
-{
-	display: block;
-	padding: 0 30px;
-	text-decoration: none;
-	text-transform: uppercase;
-	color: white;
-	font-weight: bold;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #fff;
-    margin: 1em 0;
-    padding: 0;
-}

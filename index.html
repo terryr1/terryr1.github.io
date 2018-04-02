@@ -1,62 +1,60 @@
 <html>
-<head>
-	<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-	<link rel = "stylesheet" type = "text/css" href="css/master.css">
-	<script src="https://code.jquery.com/jquery-3.3.1.js"> </script>
-	<script type="text/javascript">
-		var zero = 0;
-		$(document).ready(function(){
-			$(window).on('scroll', function(){
-				$('.navbar').toggleClass('hide', $(window).scrollTop() > zero);
-				zero = $(window).scrollTop();
-			})
-		})
-	</script>
-</head>
 
-<body>
+	<head>
+		<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel = "stylesheet" type = "text/css" href="css/master.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.js"> </script>
+		<script src="js/scrollinganim.js"> </script>
+		<title> Terry Roy | Software Developer </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
 
-	<div class = "navbar">
-		<a href="#" class = "channel"></a>
-		<ul>
-			<li><a href="#sec_2">About Me</a></li>
-			<li><a href="#sec_3">Animator</a></li>
-			<li><a href="#sec_4">Project Story</a></li>
-			<li><a href="#sec_5">Tactical Ace</a></li>
-		</ul>
-	</div>
+	<body id="AboutMe">
+		<div class = "header">
+			<h1> Terry Roy </h1>
+			<ul class = ul2>
+				<li><span>About Me</span></li>
+				<li><a href="./projects.html">Projects</a></li>
+			</ul>
+			<ul class = "ul1">
+				<li><a href="https://github.com/terryr1" target = "_blank">GitHub</a></li>
+				<li><a href="https://www.linkedin.com/in/terry-roy/" target = "_blank">LinkedIn</a></li>
+				<li><a href="https://github.com/terryr1/terryr1.github.io/blob/master/resume.pdf?raw=true">Resume</a></li>
+			</ul>
+		</div>
+		<div class = "hline">
+		<div class = "me">
+			<section class = "sec1">
+				<h1>I'm Terry Roy, a software developer and undergraduate student at Northeastern University</h1>
+				<p> I'm a creator. I'm happy when I get to make or contribute to beautifully designed projects. I also enjoy sports, community service, and hanging out.</p>
+			</section>
+			<object type="image/svg+xml" data="css/face2.svg" class="img1"></object>
+		</div>
+		<div class = "art">
+			<section class = "sec2" id="MyArt">
+				<h1>When I'm bored, I create</h1>
+				<p>One of my favorite passtimes is drawing a picture while listening to some music. I'm also interested in game design and the overlap between design and computer science. </p>
+			</section>
+			<img src = "css/artbanner.png" class = "img2">
+		</div>
+		<div class = "music">
+			<iframe width="50%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/423507465&color=%239fad8a&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+			<section class = "sec3" id="MyMusic">
+				<h1>I also enjoy playing the guitar</h1>
+				<p>I've recently purchased a looper pedal for my guitar and have been experimenting with creating music. You can hear some samples on my soundcloud.</p>
+			</section>
+		</div>
+		<div class = "footer">
+			
+			<section class = "footersec" id="footer">
+				<p>Contact Me | terryr518@gmail.com</p>
+				<p>Designed & Coded by Terry Roy</p>
+			</section>
+		</div>
 
-	<section class = "sec1" id="sec_1">
-		<h1> Terry Roy </h1>
-		<h2> Software Developer </h2>
-	</section>
-	<section class = "sec2" id="sec_2">
-		<h1> About Me </h1>
-		I'm Terry Roy, a software developer and undergraduate student at Northeastern University. I'm a computer scientist because I love to create. I believe software development is all about creativity. Create whatever you want and share it instantly with people all over the world to use. My goal is to create programs that look beautiful and work flawlessly. My favorite hobbies are playing the guitar, drawing, and playing any sport you can name. I'm also a part of the service fraternity Alpha Phi Omega at Northeastern and compete on the Club Spikeball team at Northeastern. </p>
-	</section>
-	<section class = "sec3" id="sec_3">
-		<img src = "css/animator1.jpg" class="img1">
-		<h1> Animator Project </h1>
-		<p> A simple animator designed using object oriented princliples. The animator takes in a text file encoding an animation and plays the animation using Java Swing.</p>
-	</section>
-	<section class = "sec4" id="sec_4">
-		<img src = "css/story1.jpg" class="img2">
-		<h1> Project Story </h1>
-		<p> An artistic take on platforming games. Project Story is all about building my skills as an artist, musician, and coder. I hope to create a story based platformer with an art and music style that build upon the story. </p>
-	</section>
-	<section class = "sec5" id="sec_5">
-		<img src = "css/ta1.jpg" class="img3">
-		<h1> Tactical Ace </h1>
-		<p> Tactical Ace was my first solo take at a project. It's a space shooter style arcade game that's available to download on the android app store.</p>
-	</section>
-	<hr>
-	<section class = "footer" id="footer">
-		<ul>
-			<li><a href="https://www.linkedin.com/in/terry-roy/" target = "_blank">LinkedIn</a></li>
-			<li><a href="https://github.com/terryr1" target = "_blank">GitHub</a></li>
-			<li><a href="https://github.com/terryr1/terryr1.github.io/blob/master/resume.pdf?raw=true">Resume</a></li>
-		</ul>
-	</section>
-</body>
+	</body>
 
-<html>
+
+
+</html>
+
