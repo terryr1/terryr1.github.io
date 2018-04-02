@@ -36,7 +36,6 @@ body {
 		width: 50%;
 		padding: 8%;
 		padding-top: 12vh;
-		left: 5%;
 		position: relative;
 		background-color: black;
 	}
@@ -46,7 +45,7 @@ body {
 		float: right;
 		width: 25%;
 		height: 23em;
-		padding-top: 7vh;
+		padding-top: 5vh;
 		left: 13%;		
 		position: relative;
 	}
@@ -199,7 +198,7 @@ body {
 		display: block;
 		padding: 0 2vh;/*make vh*/
 		text-decoration: none;
-		color: white;
+		color: #A9AEA2;
 		background-color: black;
 		font-weight: bold;
 	}
