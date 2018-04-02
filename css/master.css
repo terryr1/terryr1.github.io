@@ -28,13 +28,14 @@ body {
 
 	/*about me text*/
 	.sec1 {
+		align-items: center;
+		height: 25em;
 		font-family: 'Lato', serif;
 		color: #A9AEA2;
 		float: left;
-		padding-top: 10%;
 		width: 50%;
 		padding: 8%;
-		padding-top: 5%;
+		padding-top: 12vh;
 		left: 5%;
 		position: relative;
 		background-color: black;
@@ -44,9 +45,9 @@ body {
 	.img1 {
 		float: right;
 		width: 25%;
-		height: 21em;
+		height: 23em;
+		padding-top: 7vh;
 		left: 13%;		
-		padding-top: 3%;
 		position: relative;
 	}
 
@@ -55,25 +56,24 @@ body {
 	.art {
 		display: flex;
 		align-items: center;
+		height: 110vh;
 	}
 
-	/*aboutme text*/
+	/*art text*/
 	.sec2 {
 		font-family: 'Lato', serif;
 		color: #A9AEA2;
 		float: right;
 		width: 50%;
-		padding: 0%;
 		padding-left: 3%;
 		padding-right: 3%;
-		padding-top: 0%;
 		position: absolute;
 		background-color: black;
 		z-index: 5;
 	}
 
 	.img2 {
-		width: 130%;
+		width: 100%;
 		overflow: hidden;
 		height: auto;
 		padding-top: 10%;
@@ -86,37 +86,24 @@ body {
 	}
 
 	/** -----------------------------------------------ABOUT ME PART 3 **/
-	/*centers items vertically*/
+	
 	.music {
 		display: flex;
 		align-items: center;
 	}
 
-	/*aboutme text*/
+	/*guitar text*/
 	.sec3 {
+		height: 25em;
 		font-family: 'Lato', serif;
 		color: #A9AEA2;
 		float: left;
-		
 		width: 50%;
 		padding: 8%;
-		padding-top: 5%;
+		padding-top: 20vh;
 		position: relative;
 		background-color: black;
 	}
-
-	/*.sec2 p {
-		z-index: 5;
-	}
-
-	/* drawings */
-	/*.img2 {
-		float: right;
-		width: 25%;
-		height: 17em;
-		left: 15%;		
-		position: relative;
-	}*/
 
 	/** -----------------------------------------------FOOTER **/
 	/*centers items vertically*/
