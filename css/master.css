@@ -2,6 +2,9 @@ body {
     background-color: black;
 }
 
+.mobileversion {
+	color: white;
+}
 
 /*----------------DESKTOP SITE-----------------------*/
 
@@ -18,21 +21,25 @@ body {
 	    /*border: 1px solid red;*/
 	}
 
+	.mobileversion {
+		display: none;
+	}
+
 	/*----------------------------------ABOUT ME PAGE----*/
 
 	/*centers items vertically*/
 	.me {
-		display: flex;
+		display: inline-block;
 		align-items: center;
+		margin-top: -30px;
 	}
 
 	/*about me text*/
 	.sec1 {
-		align-items: center;
+		float: left;
 		height: 25em;
 		font-family: 'Lato', serif;
 		color: #A9AEA2;
-		float: left;
 		width: 50%;
 		padding: 8%;
 		padding-top: 12vh;
@@ -43,12 +50,33 @@ body {
 	/* face */
 	.img1 {
 		float: right;
+		right: 12%;
 		width: 25%;
 		height: 23em;
-		padding-top: 5vh;
-		left: 13%;		
+		padding-top: 5vh;		
 		position: relative;
 	}
+
+
+	/*guitar text*/
+	.sec3 {
+		height: 25em;
+		font-family: 'Lato', serif;
+		color: #A9AEA2;
+		float: left;
+		width: 50%;
+		padding: 8%;
+		padding-top: 20vh;
+		position: relative;
+		background-color: black;
+	}
+
+	.player {
+		padding-bottom: -10%;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
 
 	/** ----------------------------------------------ABOUT ME PART 2 **/
 	/*centers items vertically*/
@@ -143,6 +171,7 @@ body {
 
 	.header {
 		width: 100%;
+		height: 70px;
 		font-family: 'Lato', serif;
 	    font-size: 13px;/*make vh*/
 	}
@@ -154,7 +183,6 @@ body {
 		display: flex;
 		float: left;
 		padding: 0 4vh;
-		padding-right: 100px;
 	}
 
 	/*right list*/

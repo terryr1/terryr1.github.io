@@ -2,6 +2,9 @@ body {
     background-color: black;
 }
 
+.mobileversion {
+	color: white;
+}
 
 /*----------------DESKTOP SITE-----------------------*/
 
@@ -18,12 +21,17 @@ body {
 	    
 	}
 
+	.mobileversion {
+		display: none;
+	}
+
 	/*----------------------------------ABOUT ME PAGE----*/
 
 	/*centers items vertically*/
 	.ta {
-		display: flex;
+		display: inline-block;
 		align-items: center;
+		margin-top: -30px;
 	}
 
 	/*aboutme text*/
@@ -43,9 +51,10 @@ body {
 	/* ace */
 	.img1 {
 		float: right;
+		padding-top: 5em;
 		width: 35%;
-		height: 10%;
-		left: 8%;		
+		height: auto;
+		right: 8%;		
 		position: relative;
 	}
 
