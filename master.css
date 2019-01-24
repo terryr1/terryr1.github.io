@@ -258,6 +258,8 @@ body {
 
 	.white {
 		font-family: 'Lato', serif;
+		font-weight: 1;
+		font-style: normal;
 		color: black;
 		width: 50%;
 		padding: 8%;
@@ -268,6 +270,8 @@ body {
 
 	.black {
 		font-family: 'Lato', serif;
+		font-weight: 1;
+		font-style: normal;
 		margin-bottom: 0;
 		color: #A9AEA2;
 		width: 50%;
