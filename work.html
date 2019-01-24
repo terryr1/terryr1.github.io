@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang = "english">
+
+	<head>
+		<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel = "stylesheet" type = "text/css" href="master.css">
+		<title> Terry Roy | Software Developer </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body id="Work">
+
+		<!-- SIDE BAR -->
+
+		<div class = "toggle-btn" onclick="toggleSidebar()">
+	        <span></span>
+		    <span></span>
+		    <span></span>
+		</div>
+
+		<div id="sidebar">
+		  <ul class = "ul2">
+				<li><a href="./index.html">About Me</a></li>
+				<li><a href="./projects.html">Projects</a></li>
+				<li><span>Work</span></li>
+			</ul>
+			<ul class = "ul1">
+				<li><a href="https://github.com/terryr1" target = "_blank">GitHub</a></li>
+				<li><a href="https://www.linkedin.com/in/terry-roy/" target = "_blank">LinkedIn</a></li>
+				<li><a href="https://github.com/terryr1/terryr1.github.io/blob/master/resume.pdf">Resume</a></li>
+			</ul>
+		</div>
+
+		<script>
+			function toggleSidebar() {
+				document.getElementById("sidebar").classList.toggle('active');
+			}
+
+			document.addEventListener("click", function(event) {
+				if(event.target.closest("#sidebar")) return;
+				if(event.target.closest(".toggle-btn")) return;
+				document.getElementById("sidebar").classList.remove('active');
+			});
+
+		</script>
+
+		<!-- PREVIOUS CODE -->
+
+		<div class = "header">
+			<h1> Terry Roy </h1>
+			<ul class = ul2>
+				<li><a href="./index.html">About Me</a></li>
+				<li><a href="./projects.html">Projects</a></li>
+				<li><span>Work</span></li>
+			</ul>
+			<ul class = "ul1">
+				<li><a href="https://github.com/terryr1" target = "_blank">GitHub</a></li>
+				<li><a href="https://www.linkedin.com/in/terry-roy/" target = "_blank">LinkedIn</a></li>
+				<li><a href="https://github.com/terryr1/terryr1.github.io/blob/master/resume.pdf?raw=true">Resume</a></li>
+			</ul>
+		</div>
+		<div class = "hline"> </div>
+		<div class = "section">
+			<section class = "black left">
+				<h1>Pison</h1>
+				<p> My first experience in a work environment as a software developer.</p>
+			</section>
+			<img src="images/pison.jpg" class="right img" alt = "pison p" />
+		</div>
+		<div class = "footer">
+			
+			<section class = "footersec" id="footer">
+				<p>Contact Me | terryr518@gmail.com</p>
+				<p>Designed & Coded by Terry Roy</p>
+			</section>
+		</div>
+
+	</body>
+
+
+
+</html>
+

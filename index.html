@@ -1,20 +1,60 @@
+
+
 <!DOCTYPE html>
 <html lang = "english">
 
 	<head>
 		<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-		<link rel = "stylesheet" type = "text/css" href="css/master.css">
+		<link rel = "stylesheet" type = "text/css" href="master.css">
 		<title> Terry Roy | Software Developer </title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
 	<body id="AboutMe">
-		<div class = "mobileversion"> Mobile version in Development. Please make the window larger. </div>
-		<div class = "header">
-			<h1> Terry Roy </h1>
-			<ul class = ul2>
+
+		<!-- SIDE BAR -->
+
+		<div class = "toggle-btn" onclick="toggleSidebar()">
+	        <span></span>
+		    <span></span>
+		    <span></span>
+		</div>
+
+		<div id="sidebar">
+		  <ul class = "ul2">
 				<li><span>About Me</span></li>
 				<li><a href="./projects.html">Projects</a></li>
+				<li><a href="./work.html">Work</a></li>
+			</ul>
+			<ul class = "ul1">
+				<li><a href="https://github.com/terryr1" target = "_blank">GitHub</a></li>
+				<li><a href="https://www.linkedin.com/in/terry-roy/" target = "_blank">LinkedIn</a></li>
+				<li><a href="https://github.com/terryr1/terryr1.github.io/blob/master/resume.pdf">Resume</a></li>
+			</ul>
+		</div>
+
+		<script>
+			function toggleSidebar() {
+				document.getElementById("sidebar").classList.toggle('active');
+			}
+
+			document.addEventListener("click", function(event) {
+				if(event.target.closest("#sidebar")) return;
+				if(event.target.closest(".toggle-btn")) return;
+				document.getElementById("sidebar").classList.remove('active');
+			});
+
+		</script>
+
+		
+		<!-- PREVIOUS CODE -->
+
+		<div class = "header">
+			<h1> Terry Roy </h1>
+			<ul class = "ul2">
+				<li><span>About Me</span></li>
+				<li><a href="./projects.html">Projects</a></li>
+				<li><a href="./work.html">Work</a></li>
 			</ul>
 			<ul class = "ul1">
 				<li><a href="https://github.com/terryr1" target = "_blank">GitHub</a></li>
@@ -23,30 +63,29 @@
 			</ul>
 		</div>
 		<div class = "hline"> </div>
-		<div class = "me">
-			<section class = "sec1">
+		<div class = "section">
+			<section class = "left black">
 				<h1>I'm Terry Roy, a software developer and undergraduate student at Northeastern University</h1>
 				<p> I'm a creator. I'm happy when I get to make or contribute to beautifully designed projects. I also enjoy sports, community service, and hanging out.</p>
 			</section>
-			<object type="image/svg+xml" data="css/face2.svg" class="img1"></object>
+			<img src = "images/terry.png" class = "right img" alt = "terry face"/>
 		</div>
-		<div class = "art">
-			<section class = "sec2" id="MyArt">
+		<div class = "section white-back">
+			<section class = "left banner-text" id="MyArt">
 				<h1>When I'm bored, I create</h1>
 				<p>One of my favorite passtimes is drawing a picture while listening to some music. I'm also interested in game design and the overlap between design and computer science. </p>
 			</section>
-			<img src = "css/artbanner.png" class = "img2" alt = "art banner" />
+			<img src = "images/artbanner.png" class = "right banner" alt = "art banner" />
 		</div>
-		<div class = "music">
-			<iframe class = "player" width="50%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/423721968&color=%239fad8a&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-			<section class = "sec3" id="MyMusic">
+		<div class= "section">
+			<iframe class = "left img" width="100%" height="600" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/547295505&color=%23a9aea2&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+			<section class = "right black" id="MyMusic">
 				<h1>I also enjoy playing the guitar</h1>
 				<p>I've recently purchased a looper pedal for my guitar and have been experimenting with creating music. You can hear some samples on my soundcloud.</p>
 			</section>
 		</div>
 		<div class = "footer">
-			
-			<section class = "footersec" id="footer">
+			<section  id="footer" class = "footersec">
 				<p>Contact Me | terryr518@gmail.com</p>
 				<p>Designed & Coded by Terry Roy</p>
 			</section>

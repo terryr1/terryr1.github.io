@@ -3,20 +3,55 @@
 
 	<head>
 		<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-		<link rel = "stylesheet" type = "text/css" href="css/projectsmaster.css">
-		<script src="https://code.jquery.com/jquery-3.3.1.js"> </script>
-		<script src="js/scrollinganim.js"> </script>
+		<link rel = "stylesheet" type = "text/css" href="master.css">
 		<title> Terry Roy | Software Developer </title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
-	<body id="AboutMe">
-		<div class = "mobileversion2"> Mobile version in Development. Please make the window larger. </div>
+	<body id="Projects">
+
+		<!-- SIDE BAR -->
+
+		<div class = "toggle-btn" onclick="toggleSidebar()">
+	        <span></span>
+		    <span></span>
+		    <span></span>
+		</div>
+
+		<div id="sidebar">
+		  <ul class = "ul2">
+				<li><a href="./index.html">About Me</a></li>
+				<li><span>Projects</span></li>
+				<li><a href="./work.html">Work</a></li>
+			</ul>
+			<ul class = "ul1">
+				<li><a href="https://github.com/terryr1" target = "_blank">GitHub</a></li>
+				<li><a href="https://www.linkedin.com/in/terry-roy/" target = "_blank">LinkedIn</a></li>
+				<li><a href="https://github.com/terryr1/terryr1.github.io/blob/master/resume.pdf">Resume</a></li>
+			</ul>
+		</div>
+
+		<script>
+			function toggleSidebar() {
+				document.getElementById("sidebar").classList.toggle('active');
+			}
+
+			document.addEventListener("click", function(event) {
+				if(event.target.closest("#sidebar")) return;
+				if(event.target.closest(".toggle-btn")) return;
+				document.getElementById("sidebar").classList.remove('active');
+			});
+
+		</script>
+
+		<!-- PREVIOUS CODE -->
+
 		<div class = "header">
 			<h1> Terry Roy </h1>
 			<ul class = ul2>
 				<li><a href="./index.html">About Me</a></li>
 				<li><span>Projects</span></li>
+				<li><a href="./work.html">Work</a></li>
 			</ul>
 			<ul class = "ul1">
 				<li><a href="https://github.com/terryr1" target = "_blank">GitHub</a></li>
@@ -25,26 +60,27 @@
 			</ul>
 		</div>
 		<div class = "hline"> </div>
-		<div class = "ta">
-			<section class = "sec1">
+		<div class = "section">
+			<section class = "left black">
 				<h1>Tactical Ace</h1>
 				<p> Tactical Ace was my first solo take at a project. It's a space shooter style arcade game that's available to download on the android app store.</p>
 			</section>
-			<img src="css/ace.png" class="img1" alt = "tactical ace screenshot" />
+			<img src="images/ace.png" class="right img" alt = "tactical ace screenshot" />
 		</div>
-		<div class = "ap">
-			<img src = "css/animator1.jpg" class = "img2" alt = "animator screenshot" />
-			<section class = "sec2">
+		<div class = "section white-back">
+			<section class = "right white">
 				<h1>Animator Project</h1>
-				<p>A simple animator designed using object oriented princliples. The animator takes in a text file encoding an animation and plays the animation using Java Swing. The project used multiple object oriented patterns including visitors.</p>
+				<p>A simple animator designed using object oriented principles. The animator takes in a text file encoding an animation and plays the animation using Java Swing. The project used multiple object oriented patterns including visitors.</p>
 			</section>
+			<img src = "images/animator1.jpg" class = "left img" alt = "animator screenshot" />
+			
 		</div>
-		<div class = "ps">
-			<section class = "sec3">
+		<div class = "section">
+			<section class = "left black">
 				<h1>Project Story</h1>
 				<p> An artistic take on platforming games. Project Story is all about building my skills as an artist, musician, and coder. I hope to create a story based platformer with an art and music style that build upon the story. </p>
 			</section>
-			<img src = "css/gs.png" class = "img3" alt = "project story concept" />
+			<img src = "images/gs.png" class = "right img" alt = "project story concept" />
 		</div>
 		<div class = "footer">
 			

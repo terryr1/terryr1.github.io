@@ -1,0 +1,428 @@
+
+/*-------------------MOBILE VERSION---------------------------------------------------------------*/
+body {
+		margin: 0;
+		padding: 0;
+		background-color: white;
+}
+
+* {
+	    box-sizing: border-box;
+}
+
+/*------ABOUT ME-----*/
+
+.section {
+		align-items: center;
+		display: inline-block;
+		width: 100%;
+		background-color: black;
+}
+
+.white-back {
+	background-color: white;
+}
+
+.black {
+	font-family: 'Lato', serif;
+	color: #A9AEA2;
+	width: 100%;
+	padding: 8%;
+	position: relative;
+}
+
+.banner-text {
+	font-family: 'Lato', serif;
+	color: black;
+	width: 100%;
+	padding: 8%;
+	position: relative;
+}
+
+.banner {
+	width: 100%;
+	height: auto;
+	position: relative;
+	padding-top: 15%;
+	padding-bottom: 15%;
+}
+
+.white {
+	font-family: 'Lato', serif;
+	color: black;
+	width: 100%;
+	padding: 8%;
+	background-color: white;
+	position: relative;
+}
+
+/* face */
+.img {
+	padding: 8%;
+	width: auto;
+	height: 50vw;	
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	position: relative;
+}
+
+
+/** -------------------HEADER **/
+
+.hline {
+	display: none;
+}
+.header {
+	width: 100%;
+	font-family: 'Lato', serif;
+    font-size: 13px;/*make vh*/
+}
+
+
+/*my name*/
+.header h1 {
+	margin: 0;
+	position: relative;
+	display: flex;
+	float: left;
+	display: block;
+	padding: 0 0vh;/*make vh*/
+	list-style: none;
+	line-height: 80px;/*make px*/
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	margin-left: 6vh;/*make vh*/
+}
+
+.header ul {
+	display: none;
+}
+
+
+/** -----------------------------------------------FOOTER **/
+	/*centers items vertically*/
+	.footer {
+		display: flex;
+		align-items: center;
+		background-color: black;
+		width: 100%;
+		padding-top: 10%;
+	}
+
+	.footersec {
+		width: 100%;
+		font-family: 'Lato', serif;
+		color: #555654;
+		float: right;
+		padding-left: 5%;
+		background-color: black;
+	}
+
+/*--------------SIDEBAR------------*/
+
+#sidebar {
+
+	font-family: 'Lato', serif;
+	top: -.25%;
+	font-size: 13px;/*make vh*/
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	width: 35%;
+	height:100%;
+	background-color: white;
+	right: -35%;
+	transition: all 500ms linear;
+	z-index: 2;
+}
+
+#sidebar.active {
+	z-index: 2;
+	right: 0%;
+}
+
+.toggle-btn {
+	position: absolute;
+	right: 5%;
+	top: 25px;
+}
+
+.toggle-btn span {
+	display: block;
+	width: 28px;
+	height: 4px;
+	background: black;
+	margin: 5px;
+}
+
+#sidebar ul li
+{
+	list-style: none;
+	line-height: 35px;/*make px*/
+	text-align: left;
+}
+
+#sidebar ul li a
+{
+	display: block;
+	padding: 0 2vh;/*make vh*/
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+#sidebar ul li span
+{
+	display: block;
+	padding: 0 2vh;/*make vh*/
+	text-decoration: none;
+	color: #A9AEA2;
+	background-color: black;
+	font-weight: bold;
+}
+
+#sidebar ul li a:hover
+{
+	font-family: 'Lato', serif;
+    font-size: 12px;/*make vh*/
+}
+
+
+/*----------------DESKTOP SITE--------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 777px) {
+
+    body {
+		margin: 0;
+		padding: 0;
+		background-color: white;
+	}
+
+	* {
+		margin: 0;
+	    box-sizing: border-box;
+	    /*border: 1px solid red;*/
+	}
+
+	.mobileversion {
+		display: none;
+	}
+
+	#sidebar {
+		display: none;
+	}
+
+	.toggle-btn {
+		display: none;
+	}
+
+	/*----------------------------------MAIN PAGE CONTENT----*/
+
+	.section {
+		all: unset;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		background-color: white;
+	}
+
+	.section h1 {
+		margin-bottom: 20px;
+	}
+	
+	.left {
+		float: left;
+
+	}
+
+	.right {
+		float: right;
+	}
+
+	.img {
+		all: unset;
+		max-height: 50vh;
+		margin: 0;
+		padding-top: 3%;
+		padding-bottom: 3%;
+		padding-left: 8%;
+		padding-right: 8%;
+		object-fit: contain;
+		align-self: center;
+		width: 34%;
+		height: auto;
+	}
+
+	.white {
+		font-family: 'Lato', serif;
+		color: black;
+		width: 50%;
+		padding: 8%;
+		padding-top: 25%;
+		padding-bottom: 25%;
+		background-color: white;
+	}
+
+	.black {
+		font-family: 'Lato', serif;
+		margin-bottom: 0;
+		color: #A9AEA2;
+		width: 50%;
+		padding: 8%;
+		padding-top: 12%;
+		padding-bottom: 12%;
+		background-color: black;
+	}
+
+	/**-------------------------------art banner---------------------------**/
+
+	.banner-text {
+		z-index: 2;
+		font-family: 'Lato', serif;
+		color: #A9AEA2;
+		width: 50%;
+		padding: 4%;
+		margin-top: 25%;
+		margin-bottom: 25%;
+		background-color: black;
+	}
+
+	.banner {
+		width: 100%;
+		height: auto;
+		top: 95%;
+		left: 0%;
+		position: absolute;
+		padding-top: 15%;
+		padding-bottom: 15%;
+	}
+
+
+	/** -----------------------------------------------FOOTER **/
+	/*centers items vertically*/
+	.footer {
+		display: flex;
+		align-items: center;
+		background-color: black;
+		padding-top: 8%; 
+		width: 100%;
+	}
+
+	.footersec {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		width: 100%;
+		font-family: 'Lato', serif;
+		color: #555654;
+		float: right;
+		padding-left: 5%;
+		background-color: black;
+	}
+
+	.footersec p {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+
+	/*----------------------------------------------------HEADER----*/
+
+	/*header line*/
+	.hline {
+		left: 0;
+		display: unset;
+		width: 100%;
+		top: 75px;/*make vh*/
+		color: black;
+		border-top: 2px solid black;/*make vh*/
+		position: absolute;
+	}
+
+	.header {
+		width: 100%;
+		font-family: 'Lato', serif;
+	    font-size: 13px;/*make vh*/
+	}
+
+	.header ul
+	{
+		display: unset;
+		display: flex;
+	}
+
+	/*left list*/
+	.ul2
+	{
+		top: 15px;
+		position: relative;
+		display: flex;
+		float: left;
+		padding: 0 4vh;
+	}
+
+	/*right list*/
+	.ul1
+	{
+		top: 15px;
+		position: relative;
+		display: flex;
+		float: right;
+		padding: 0 4vh;
+	}
+
+	/*my name*/
+	.header h1 {
+		top: 10px;
+		position: relative;
+		display: flex;
+		float: left;
+		display: block;
+		padding: 0 2vh;/*make vh*/
+		list-style: none;
+		line-height: 75px;/*make px*/
+		text-align: center;
+		text-decoration: none;
+		color: black;
+		font-weight: bold;
+		margin-left: 6vh;/*make vh*/
+	}
+
+	.header ul li
+	{
+		list-style: none;
+		line-height: 75px;/*make px*/
+		text-align: center;
+	}
+
+	.header ul li a
+	{
+		display: block;
+		padding: 0 2vh;/*make vh*/
+		text-decoration: none;
+		color: black;
+		font-weight: bold;
+	}
+
+	.header ul li span
+	{
+		display: block;
+		padding: 0 2vh;/*make vh*/
+		text-decoration: none;
+		color: #A9AEA2;
+		background-color: black;
+		font-weight: bold;
+	}
+
+	.header ul li a:hover
+	{
+		font-family: 'Lato', serif;
+	    font-size: 12px;/*make vh*/
+	}
+
+}
+
+
+
