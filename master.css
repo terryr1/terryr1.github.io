@@ -1,5 +1,7 @@
 
 /*-------------------MOBILE VERSION---------------------------------------------------------------*/
+
+/*reset css*/
 body {
 		margin: 0;
 		padding: 0;
@@ -10,13 +12,13 @@ body {
 	    box-sizing: border-box;
 }
 
-/*------ABOUT ME-----*/
+/*------Formatting Text and Images-----*/
 
 .section {
-		align-items: center;
-		display: inline-block;
-		width: 100%;
-		background-color: black;
+	align-items: center;
+	display: inline-block;
+	width: 100%;
+	background-color: black;
 }
 
 .white-back {
@@ -73,12 +75,12 @@ body {
 .hline {
 	display: none;
 }
+
 .header {
 	width: 100%;
 	font-family: 'Lato', serif;
     font-size: 13px;/*make vh*/
 }
-
 
 /*my name*/
 .header h1 {
@@ -103,38 +105,37 @@ body {
 
 
 /** -----------------------------------------------FOOTER **/
-	/*centers items vertically*/
-	.footer {
-		display: flex;
-		align-items: center;
-		background-color: black;
-		width: 100%;
-		padding-top: 10%;
-	}
+/*centers items vertically*/
+.footer {
+	display: flex;
+	align-items: center;
+	background-color: black;
+	width: 100%;
+	padding-top: 10%;
+}
 
-	.footersec {
-		width: 100%;
-		font-family: 'Lato', serif;
-		color: #555654;
-		float: right;
-		padding-left: 5%;
-		background-color: black;
-	}
+.footersec {
+	width: 100%;
+	font-family: 'Lato', serif;
+	color: #555654;
+	float: right;
+	padding-left: 5%;
+	background-color: black;
+}
 
 /*--------------SIDEBAR------------*/
 
 #sidebar {
-
 	font-family: 'Lato', serif;
 	top: -.25%;
 	font-size: 13px;/*make vh*/
 	margin: 0;
 	padding: 0;
 	position: fixed;
-	width: 35%;
+	width: 45%;
 	height:100%;
 	background-color: white;
-	right: -35%;
+	right: -45%;
 	transition: all 500ms linear;
 	z-index: 2;
 }
@@ -193,7 +194,9 @@ body {
 
 /*----------------DESKTOP SITE--------------------------------------------------------------------------------------------*/
 
-@media only screen and (min-width: 777px) {
+@media only screen and (min-width: 830px) {
+
+	/*Resets css and doesn't display mobile only things*/
 
     body {
 		margin: 0;
@@ -203,8 +206,11 @@ body {
 
 	* {
 		margin: 0;
-	    box-sizing: border-box;
 	    /*border: 1px solid red;*/
+	}
+
+	div {
+		width: 100%;
 	}
 
 	.mobileversion {
@@ -219,59 +225,57 @@ body {
 		display: none;
 	}
 
-	/*----------------------------------MAIN PAGE CONTENT----*/
-
+	/*---------------------Formats Images and Text----*/
 	.section {
 		all: unset;
-		display: flex;
 		align-items: center;
 		width: 100%;
+		display: flex;
+		font-family: 'Lato', serif;
+		font-weight: 1;
 		background-color: white;
+		font-style: normal;
 	}
 
 	.section h1 {
 		margin-bottom: 20px;
 	}
+
+	.img-container {
+		text-align: center;
+
+		width: 50%;
+	}
 	
 	.left {
 		float: left;
-
 	}
 
 	.right {
 		float: right;
 	}
 
+
 	.img {
-		all: unset;
-		max-height: 50vh;
-		margin: 0;
-		padding-top: 3%;
-		padding-bottom: 3%;
-		padding-left: 8%;
-		padding-right: 8%;
-		object-fit: contain;
-		align-self: center;
-		width: 34%;
-		height: auto;
+		padding: 0;
+		width: auto;
+		height: auto;	
+		max-height: 40vh;
+		max-width: 60%;
 	}
 
 	.white {
-		font-family: 'Lato', serif;
-		font-weight: 1;
-		font-style: normal;
+		vertical-align: middle;
 		color: black;
 		width: 50%;
 		padding: 8%;
-		padding-top: 25%;
-		padding-bottom: 25%;
+		padding-top: 20%;
+		padding-bottom: 20%;
 		background-color: white;
 	}
 
 	.black {
-		font-family: 'Lato', serif;
-		font-weight: 1;
-		font-style: normal;
+		vertical-align: middle;
 		margin-bottom: 0;
 		color: #A9AEA2;
 		width: 50%;
@@ -280,6 +284,8 @@ body {
 		padding-bottom: 12%;
 		background-color: black;
 	}
+
+
 
 	/**-------------------------------art banner---------------------------**/
 
@@ -297,11 +303,7 @@ body {
 	.banner {
 		width: 100%;
 		height: auto;
-		top: 95%;
-		left: 0%;
 		position: absolute;
-		padding-top: 15%;
-		padding-bottom: 15%;
 	}
 
 
@@ -339,16 +341,17 @@ body {
 		left: 0;
 		display: unset;
 		width: 100%;
-		top: 75px;/*make vh*/
+		top: 78px;
 		color: black;
-		border-top: 2px solid black;/*make vh*/
+		border-top: 2px solid black;
 		position: absolute;
 	}
 
 	.header {
+		display: inline-block;
 		width: 100%;
 		font-family: 'Lato', serif;
-	    font-size: 13px;/*make vh*/
+	    font-size: 13px;
 	}
 
 	.header ul
@@ -384,20 +387,20 @@ body {
 		display: flex;
 		float: left;
 		display: block;
-		padding: 0 2vh;/*make vh*/
+		padding: 0 2vh;
 		list-style: none;
-		line-height: 75px;/*make px*/
+		line-height: 75px;
 		text-align: center;
 		text-decoration: none;
 		color: black;
 		font-weight: bold;
-		margin-left: 6vh;/*make vh*/
+		margin-left: 6vh;
 	}
 
 	.header ul li
 	{
 		list-style: none;
-		line-height: 75px;/*make px*/
+		line-height: 75px;
 		text-align: center;
 	}
 
