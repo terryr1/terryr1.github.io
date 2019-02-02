@@ -8,6 +8,10 @@ body {
 		background-color: white;
 }
 
+.space {
+	margin: 25%;
+}
+
 * {
 	    box-sizing: border-box;
 }
@@ -204,6 +208,10 @@ body {
 		background-color: white;
 	}
 
+	p {
+		margin-bottom: 1em;
+	}
+
 	* {
 		margin: 0;
 	    /*border: 1px solid red;*/
@@ -233,11 +241,14 @@ body {
 		display: flex;
 		font-family: 'Lato', serif;
 		font-weight: 1;
+		line-height: 125%;
 		background-color: white;
 		font-style: normal;
 	}
 
 	.section h1 {
+		font-size: 30px;
+		line-height: 125%;
 		margin-bottom: 20px;
 	}
 
