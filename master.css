@@ -214,7 +214,7 @@ body {
 
 	* {
 		margin: 0;
-	    /*border: 1px solid red;*/
+	    /* border: 1px solid red; */
 	}
 
 	div {
@@ -269,12 +269,11 @@ body {
 	.img {
 		display: inline-flex;
 		padding: 0;
-		padding-left: 10px;
-		padding-right: 10px;
 		width: auto;
 		height: auto;	
 		max-height: 40vh;
 		max-width: 60%;
+		border-radius: 10px;
 	}
 
 	.white {
